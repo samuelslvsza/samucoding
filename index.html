@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Silva</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="shortcut icon" href="disco.png" type="image/x-icon">
+
+    <audio  id="myAudio" src="ＡＵＴＵＭＮ　ＣＨＩＬＬ.mp3" loop></audio>
+
+</head>
+<body>
+    <div id="musica">
+        <div id="photo">
+
+            <img src="vitrolacomigo.png" width="440px" id="vitrola">
+            <img src="disco.png" width="266px" id="foto">
+            <img src="agulha.png" alt="agulha" width="440px" id="agulha">
+        </div>
+    </div>
+    <div id="icon">
+        <i id="icon_music" class="fas fa-play" onclick="musica(); rodar(); tocar(); icone()"></i>
+    </div>
+    <div id="div_samuelname">
+        <img src="SAMUEL GLITCH.gif" id="samuel_neon" alt="glitch">
+    </div>
+    <p id="texto">Olá! Eu amei te ver por aqui, seja bem-vindo(a) e fique à vontade!</p>
+    <p id="texto2">Me chamo Samuel, sou designer e desenvolvedor web e amo Tecnologia! </p>
+    <div id="redes_sociais">Siga-me!</div>
+
+    <div id="div">
+        <a href="https://github.com/samuelslvsza" target='blank' id="link1">
+            <button class="seguir" onmousemove="git()" onmouseout="none()">
+                <i class="fab fa-github"></i>
+            </button>
+        </a>
+
+        <a href="https://instagram.com/samucoding" target='blank' id="link2">
+            <button class="seguir" onmousemove="insta()" onmouseout="none()">
+                <i class="fab fa-instagram"></i>
+            </button>
+        </a>
+        <a href="https://www.tiktok.com/@samucoding" target='blank' id="link3">
+            <button class="seguir" onmousemove="tiktok()" onmouseout="none()">
+                <img src="tik-tok.png" width="30px" alt="tiktok_image">
+            </button>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5519971706243&text=Fala%20Samuel%2C%20beleza%3F%20Me%20interessei%20pelo%20seu%20trabalho%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA!%20" target='blank' id="link4">
+            <button class="seguir" onmousemove="whats()" onmouseout="none()">
+                <i class="fab fa-whatsapp"></i>
+            </button>
+        </a>
+
+    </div>
+    <div id="web_atom">
+        <a href="https://webatom.com.br/links/" style="text-decoration: none; margin-top: 10px;" target="blank">
+            <p style="color: #ffb000; margin-top: 10px;">Conheça a minha empresa</p>
+            <img src="logo 3d.png" width="250px" alt="">
+            <p style="color: white;">Web Atom</p>
+
+        </a>
+    </div>
+
+    <script>
+        var ap = document.getElementById('texto');
+        var ap2 = document.getElementById('texto2');
+        var sigaMe = document.getElementById('redes_sociais')
+        var fundo = document.getElementById('html');
+        var myAudio = document.getElementById("myAudio");
+        var foto = document.getElementById("foto");
+        var braco = document.getElementById('agulha');
+        var vitrola = document.getElementById('vitrola');
+
+        var campo = document.getElementById('redes_sociais');
+        var icon = document.getElementById('icon_music')
+
+        function musica() {
+            return myAudio.paused ? myAudio.play() : myAudio.pause();
+        }
+
+        function icone() {
+            icon.classList.toggle('fa-play')
+            icon.classList.toggle('fa-pause')
+        }
+        
+        function rodar() {
+            foto.classList.toggle("rodar");
+        }
+        function tocar() {
+            braco.classList.toggle("tocar");
+        }
+        function git() {
+            campo.innerText ='Siga-me! samuelslvsza'
+        }
+        function insta() {
+            campo.innerText ='Siga-me! @samucoding'
+        }
+        function whats() {
+            campo.innerText ='(19) 97170-6243'
+        }
+        function tiktok() {
+            campo.innerText ='Siga-me! @samucoding'
+        }
+        function none() {
+            campo.innerText ='Siga-me!'
+        }
+    </script>
+</body>
+</html>
